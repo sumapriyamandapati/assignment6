@@ -1,5 +1,5 @@
 const { MongoClient } = require('mongodb');
-const url = process.env.DB_URL ||'mongodb+srv://suma_priya_3657:mandapati@assignment6.sm3657.mongodb.net/productdb?retryWrites=true&w=majority';
+const url = process.env.DB_URL ||'mongodb+srv://taaccount:tapassword@cluster0.kg8ah.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 
 
 
