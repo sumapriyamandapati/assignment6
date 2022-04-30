@@ -15,6 +15,7 @@ export const ErrorModal = () => {
         <>
             {
                 errors.map(error => (
+                    // eslint-disable-next-line react/jsx-key
                     <Snackbar open={!error.visited} autoHideDuration={6000}>
                         <Alert onClose={() => handleClose(error)} severity="error" sx={{ width: '100%' }}>
                             {error.errorDescription}
