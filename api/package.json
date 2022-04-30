@@ -1,30 +1,32 @@
 {
-    "name": "assignment6",
-    "version": "1.0.0",
-    "description": "This is an assignment 6 of CS-648",
-    "main": "index.js",
-    "scripts": {
-        "start": "nodemon -e js,graphql -w . -w .env server.js",
-        "lint": "eslint .",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/sumapriyamandapati"
-    },
-    "author": "sumapriya mandapati",
-    "license": "ISC",
-    "dependencies": {
-        "apollo-server-express": "^2.3.1",
-        "dotenv": "^6.2.0",
-        "express": "^4.16.4",
-        "graphql": "^0.13.2",
-        "mongodb": "^3.1.10",
-        "nodemon": "^1.18.9"
-    },
-    "devDependencies": {
-        "eslint": "^5.12.0",
-        "eslint-config-airbnb-base": "^13.1.0",
-        "eslint-plugin-import": "^2.14.0"
-    }
+  "name": "api",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sumapriyamandapati/assignment4.git"
+  },
+  "keywords": [],
+  "author": "Sumapriya",
+  "bugs": {
+    "url": "https://github.com/sumapriyamandapati/assignment4/issues"
+  },
+  "scripts": {
+    "serve": "nodemon -w server server/server.js",
+    "start": "nodemon -w server server/server.js"
+  },
+  "dependencies": {
+    "apollo-server-express": "^3.6.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.3.0",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "@apollo/client": "^3.5.9",
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "@typescript-eslint/parser": "^5.12.1",
+    "dotenv": "^16.0.0",
+    "mongodb": "^4.4.1"
+  }
 }
